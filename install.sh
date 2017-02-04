@@ -22,8 +22,8 @@ cd elasticsearch-5.1.2
 mkdir config/hunspell
 mkdir config/hunspell/cs_CZ
 cd config/hunspell/cs_CZ
-curl -s -o cs_CZ.aff https://github.com/pavoltravnik/elasticsearch-cz/raw/master/cs_CZ.aff
-curl -s -o cs_CZ.dic https://github.com/pavoltravnik/elasticsearch-cz/raw/master/cs_CZ.dic
+curl -sL -o cs_CZ.aff https://github.com/pavoltravnik/elasticsearch-cz/raw/master/cs_CZ.aff
+curl -sL -o cs_CZ.dic https://github.com/pavoltravnik/elasticsearch-cz/raw/master/cs_CZ.dic
 cd ../../../bin
 sudo ./elasticsearch-plugin install analysis-icu
 nohup ./elasticsearch &
