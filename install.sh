@@ -74,10 +74,10 @@ curl -XPUT 'localhost:9200/my_index/_mapping/user?pretty&pretty' -d '
 {
   "properties": {
     "name": {
-      "type": "string",
+      "type": "text",
       "fields": {
         "sort": {
-          "type": "string",
+          "type": "text",
           "analyzer": "czech"
         }
       }
