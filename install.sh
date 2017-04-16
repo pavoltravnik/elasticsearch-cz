@@ -26,9 +26,7 @@ curl -sL -o cs_CZ.aff https://github.com/pavoltravnik/elasticsearch-cz/raw/maste
 curl -sL -o cs_CZ.dic https://github.com/pavoltravnik/elasticsearch-cz/raw/master/cs_CZ.dic
 cd ../../../bin
 sudo ./elasticsearch-plugin install analysis-icu
-nohup ./elasticsearch &
-
-echo $! > run.pid
+./elasticsearch -p elasticsearch-pid -d
 
 
 
